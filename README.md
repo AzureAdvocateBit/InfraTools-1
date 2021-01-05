@@ -17,7 +17,7 @@ You can pass these two parameters as URL querystring parameters or in the body o
     "alias" : "urlistfdbeta.azurefd.net"
 }
 ```
-This function will then check the local DNS to see if the CNAME has propgated and returns **_true_** if it has or **_false_** if it hasn't. This function can be used as an automated [pre or post deployment gate](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/approvals/gates?view=azure-devops) in Azure Pipelines.
+This function will then check the local DNS to see if the CNAME has propgated and returns **_true_** if it has or **_false_** if it hasn't. This function can be used as an automated [pre or post deployment gate](https://docs.microsoft.com/azure/devops/pipelines/release/approvals/gates?view=azure-devops&WT.mc_id=dotnet-0000-abewan) in Azure Pipelines.
 
 ## Infrastructure Versioning Framework
 This is a framework used to keep track of the version of your infrastructure deployed in Azure. It consists of an Azure Storage table used to hold the deployment stage (via the Partition Key), name of the IaC file that is deployed (via the Row Key),and the currently deployed version.
@@ -182,9 +182,9 @@ But there's still so much coolness that can be added. Here's the next few things
 - impliment rolling back/down functions.
 
 ## Links
-- [YAML Pipelines in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema&WT.mc_id=urlist-blog-abewan)
-- [Table Storage](https://docs.microsoft.com/azure/storage/?WT.mc_id=urlist-blog-abewan)
-- [Deployment Gates](https://docs.microsoft.com/azure/devops/pipelines/release/deploy-using-approvals?view=azure-devops&WT.mc_id=urlist-blog-abewan)
-- [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/?view=azure-devops&WT.mc_id=urlist-blog-abewan)
-- [Release Variables in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch&WT.mc_id=urlist-blog-abewan)
+- [YAML Pipelines in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema&WT.mc_id=dotnet-0000-abewan)
+- [Table Storage](https://docs.microsoft.com/azure/storage/?WT.mc_id=dotnet-0000-abewan)
+- [Deployment Gates](https://docs.microsoft.com/azure/devops/pipelines/release/deploy-using-approvals?view=azure-devops&WT.mc_id=dotnet-0000-abewan)
+- [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/?view=azure-devops&WT.mc_id=dotnet-0000-abewan)
+- [Release Variables in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch&WT.mc_id=dotnet-0000-abewan)
 - [The Urlist](https://github.com/the-urlist)
